@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: BB Bootstrap Alerts
+ * Plugin Name: Bootstrap Alerts For Beaver Builder
  * Plugin URI: http://www.brainstormforce.com
- * Description: Notification module for the Beaver Builder Plugin.
+ * Description: This is the plugin to create predefined alert messages.
  * Version: 1.0
- * Author: Akash D.
- * Author URI: Soon...
+ * Author: Brainstorm Force
+ * Author URI: https://www.brainstormforce.com/
  */
 define( 'BB_NOTIFICATIONS_DIR', plugin_dir_path( __FILE__ ) );
 define( 'BB_NOTIFICATIONS_URL', plugins_url( '/', __FILE__ ) );

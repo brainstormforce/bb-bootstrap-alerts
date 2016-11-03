@@ -30,6 +30,10 @@
 	border-color: #<?php echo $settings->bbn_border_color; ?>;
 }
 
-.fl-node-<?php echo $id; ?> i.fa {
+.fl-node-<?php echo $id; ?> .fi-background-color,
+.fl-node-<?php echo $id; ?> .dashicons,
+.fl-node-<?php echo $id; ?> .fa,
+.fl-node-<?php echo $id; ?> .ua-icon
+ {
 	color: #<?php echo $settings->bbn_icon_color; ?>;
 }

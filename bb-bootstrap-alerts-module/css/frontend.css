@@ -1,0 +1,11 @@
+/**
+ * This file should contain frontend styles that 
+ * will be applied to all module instances.
+ */
+
+.bb-bootstrap-alerts-common a:hover {
+    text-decoration:none;
+}
+.bb-bootstrap-alerts-common .bbn_information {
+    color: inherit;
+}

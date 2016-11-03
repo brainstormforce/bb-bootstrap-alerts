@@ -27,10 +27,10 @@
 		}
 	?>
 	<?php if(!$navigation): ?>
-		<a href="<?php echo $nav_link;?>" target="<?php echo $nav_target;?>">
+		<a href="<?php echo $nav_link;?>" target="<?php echo $nav_target;?>" style="text-decoration:none;">
 	<?php endif; ?>
 
-			<div class="alert <?php echo $settings->bbn_dropdown_field; ?> fade in">
+			<div class="alert <?php echo $settings->bbn_dropdown_field; ?> fade in" style="text-decoration:none;">
 				<?php if( $settings->bbn_closable == 'yes' ): ?>
 					<span class="close" data-dismiss="alert" aria-label="close">&times;</span>
 				<?php endif; ?>
