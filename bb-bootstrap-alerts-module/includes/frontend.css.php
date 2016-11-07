@@ -57,3 +57,7 @@
 	margin-left:10px;
 }
 <?php } ?>
+
+.fl-node-<?php echo $id; ?> .close {
+	font-size: <?php echo ($settings->bbn_close_btn_size !='') ? $settings->bbn_close_btn_size : '21' ; ?>px;
+}

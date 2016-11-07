@@ -44,6 +44,25 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                         ),
                     'default'       => 'yes',
                     'help'          => 'Alert will able to close if set to YES',
+                    'toggle'        => array(
+
+                            // dependency fields on custom dropdown item
+                            'yes'    => array(
+                            'fields'          => array( 'bbn_close_btn_size'),
+                            ),
+                        'no'      => array()
+                        )
+                    ),
+                    // close button size
+                    'bbn_close_btn_size'     => array(          
+                    'type'          => 'text',
+                    'label'         => __('Close Button Size (Optional)', 'fl-builder'),
+                    'maxlength'     => '2',
+                    'size'          => '3',
+                    'placeholder'   => '21',
+                    'class'         => 'my-css-class',
+                    'description'   => 'px',
+                    'help'          => 'Set only if it required',
                     ),
 
                     // notification type dropdown
@@ -58,7 +77,7 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                         'alert-custom'       => __( 'Custom', 'fl-builder' )
                         ),
                     'default'       => '',
-                    'help'          => "If you want to change colors select 'Custom' option in dropdown",
+                    'help'          => "If you want to change colors select 'Custom' option in dropdown. Default colors are as per Bootstrap",
                     'toggle'        => array(
 
                             // dependency fields on custom dropdown item
