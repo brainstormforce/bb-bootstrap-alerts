@@ -49,7 +49,7 @@
 			break;
 	}?>
 }
-
+/* close button padding css */
 <?php if(($settings->bbn_padding_top=='0')&&($settings->bbn_padding_bottom=='0')) { ?>
 .fl-node-<?php echo $id; ?> .close {
 	margin: 0;
