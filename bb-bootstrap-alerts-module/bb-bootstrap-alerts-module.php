@@ -68,7 +68,7 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                         'default'       => '',
                         'toggle'        => array(
                             'alert-custom'      => array(
-                                'fields'        => array( 'bbn_font_color','bbn_background_color','bbn_border_color' ),
+                                'fields'        => array( 'bbn_font_color','bbn_background_color','bbn_border_color','bbn_border_size','bbn_border_style','bbn_border_radius' ),
                                //'sections'      => array( 'my_section' ),
                                 //'tabs'          => array( 'my_tab' )
                             ),
@@ -114,9 +114,71 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                             )
                         )
                     ),
+                        'bbn_border_size'     => array(          
+                        'type'          => 'text',
+                        'label'         => __('Border Size', 'fl-builder'),
+                        'maxlength'     => '2',
+                        'size'          => '3',
+                        'placeholder'   => '1',
+                        'class'         => 'my-css-class',
+                        'description'   => 'px',
+                        'help'          => 'In Pixel Only',
+                        'preview'         => array(
+                            'type'             => 'css',
+                            'selector'         => '.bb-bootstrap-alerts-common .alert-custom',
+                            'property'         => 'border-width',
+                            'unit'             => 'px'
+                        )
+                    ),  
+                        'bbn_border_style' => array(
+                        'type'          => 'select',
+                        'label'         => __('Border Style', 'fl-builder'),
+                        'options'       => array(
+                            'solid'      => __( 'Solid', 'fl-builder' ),
+                            'dotted'     => __( 'Dotted', 'fl-builder' ),
+                            'dashed'     => __( 'Dashed', 'fl-builder' ),
+                            'double'     => __( 'Double', 'fl-builder' ),
+                            'groove'     => __( 'Groove', 'fl-builder' ),
+                            'ridge'      => __( 'Ridge', 'fl-builder' ),
+                            'inset'      => __( 'Inset', 'fl-builder' ),
+                            'outset'     => __( 'Outset', 'fl-builder' ),
+                            'none'       => __( 'None', 'fl-builder' )
+                        ),
+                        'default'       => 'solid',
+                        'help'          => 'Style of the border',
+                        'preview'         => array(
+                            'type'             => 'css',
+                            'selector'         => '.bb-bootstrap-alerts-common .alert-custom',
+                            'property'         => 'border-style',
+                        )
+                    ),
+                        'bbn_border_radius'     => array(          
+                        'type'          => 'text',
+                        'label'         => __('Border Radius', 'fl-builder'),
+                        'maxlength'     => '3',
+                        'size'          => '4',
+                        'placeholder'   => '4',
+                        'class'         => 'my-css-class',
+                        'description'   => 'px',
+                        'help'          => 'In Pixel Only',
+                        'preview'         => array(
+                            'type'             => 'css',
+                            'selector'         => '.bb-bootstrap-alerts-common .alert-custom',
+                            'property'         => 'border-radius',
+                            'unit'             => 'px'
+                        )
+                    ),
+
                         
-                       
-                        'bbn_dropdown_link' => array(                   // link dropdown
+                        
+                ),
+            
+            ),
+                'bbn_link'       => array( // Section
+                'title'         => __('Link', 'fl-builder'), // Section Title
+                'fields'        => array( // Section Fields
+
+                    'bbn_dropdown_link' => array(                   // link dropdown
                         'type'          => 'select',
                         'label'         => __('Link', 'fl-builder'),
                         'options'       => array(
@@ -134,7 +196,7 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                             'no'      => array()
                         )
                     ),
-                        'bbn_navigation_link' => array(                 // link
+                    'bbn_navigation_link' => array(                 // link
                         'type'          => 'link',
                         'label'         => __('Link Address', 'fl-builder'),
                         'placeholder'   => __('http://', 'fl-builder')
@@ -148,8 +210,8 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                         ),
                         'default'       => 'no',
                     ),
-                ),
-            
+
+                ),  
             ),
                 'bbn_structure'       => array( // Section
                 'title'         => __('Structure', 'fl-builder'), // Section Title
@@ -163,6 +225,7 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                             'right'      => __( 'Right', 'fl-builder' ),
                             'center'      => __( 'Center', 'fl-builder' )
                         ),
+                        'help'            => "Overall Alignment of the Structure",
                         'preview'         => array(
                             'type'             => 'css',
                             'selector'         => '.bb-bootstrap-alerts-common',
@@ -178,66 +241,38 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     'bbn_padding_top'     => array(                     // padding top
                         'type'          => 'text',
                         'label'         => __('Padding Top', 'fl-builder'),
-                        'default'       => '20',
                         'maxlength'     => '3',
                         'size'          => '3',
-                        'placeholder'   => '20',
+                        'placeholder'   => '0',
                         'class'         => 'my-css-class',
                         'description'   => 'px',
-                        'preview'         => array(
-                            'type'             => 'css',
-                            'selector'         => '.bb-bootstrap-alerts-common .alert',
-                            'property'         => 'padding-top',
-                            'unit'             => 'px'
-                        )
                     ),
                     'bbn_padding_bottom'     => array(               // padding bottom
                         'type'          => 'text',
                         'label'         => __('Padding Bottom', 'fl-builder'),
-                        'default'       => '20',
                         'maxlength'     => '3',
                         'size'          => '3',
-                        'placeholder'   => '20',
+                        'placeholder'   => '0',
                         'class'         => 'my-css-class',
                         'description'   => 'px',
-                        'preview'         => array(
-                            'type'             => 'css',
-                            'selector'         => '.bb-bootstrap-alerts-common .alert',
-                            'property'         => 'padding-bottom',
-                            'unit'             => 'px'
-                        )
                     ),
                     'bbn_padding_left'     => array(               // padding left
                         'type'          => 'text',
                         'label'         => __('Padding Left', 'fl-builder'),
-                        'default'       => '20',
                         'maxlength'     => '3',
                         'size'          => '3',
-                        'placeholder'   => '20',
+                        'placeholder'   => '0',
                         'class'         => 'my-css-class',
                         'description'   => 'px',
-                        'preview'         => array(
-                            'type'             => 'css',
-                            'selector'         => '.bb-bootstrap-alerts-common .alert',
-                            'property'         => 'padding-left',
-                            'unit'             => 'px'
-                        )
                     ),
                     'bbn_padding_right'     => array(               // padding right
                         'type'          => 'text',
                         'label'         => __('Padding Right', 'fl-builder'),
-                        'default'       => '20',
                         'maxlength'     => '3',
                         'size'          => '3',
-                        'placeholder'   => '20',
+                        'placeholder'   => '0',
                         'class'         => 'my-css-class',
                         'description'   => 'px',
-                        'preview'         => array(
-                            'type'             => 'css',
-                            'selector'         => '.bb-bootstrap-alerts-common .alert',
-                            'property'         => 'padding-right',
-                            'unit'             => 'px'
-                        )
                     ),
                 ),  
             )
@@ -302,34 +337,20 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                         'bbn_font_size'     => array(           // Font Size
                         'type'          => 'text',
                         'label'         => __('Font Size', 'fl-builder'),
-                        'default'       => '18',
                         'placeholder'   => '18',
                         'maxlength'     => '3',
                         'size'          => '5',
                         'class'         => 'my-css-class',
                         'description'   => 'px',
-                        'preview'         => array(
-                            'type'             => 'css',
-                            'selector'         => '.bb-bootstrap-alerts-common',
-                            'property'         => 'font-size',
-                            'unit'             => 'px'
-                        )
                     ),
                         'bbn_line_height'     => array(         // Line Height
                         'type'          => 'text',
                         'label'         => __('Line Height', 'fl-builder'),
-                        'default'       => '22',
                         'placeholder'   => '22',
                         'maxlength'     => '3',
                         'size'          => '5',
                         'class'         => 'my-css-class',
                         'description'   => 'px',
-                        'preview'         => array(
-                            'type'             => 'css',
-                            'selector'         => '.bb-bootstrap-alerts-common',
-                            'property'         => 'line-height',
-                            'unit'             => 'px'
-                        )
                     ),
                     )
                 ) //icon

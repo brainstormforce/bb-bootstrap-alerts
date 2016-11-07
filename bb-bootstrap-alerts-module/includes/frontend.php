@@ -27,27 +27,32 @@
 		}
 	?>
 	<?php if(!$navigation): ?>
-		<a href="<?php echo $nav_link;?>" target="<?php echo $nav_target;?>" style="text-decoration:none;">
+		<a href="<?php echo $nav_link;?>" target="<?php echo $nav_target;?>" >
 	<?php endif; ?>
 
-			<div class="alert <?php echo $settings->bbn_dropdown_field; ?> fade in" style="text-decoration:none;">
+			<div class="alert <?php echo $settings->bbn_dropdown_field; ?> fade in" >
+
 				<?php if( $settings->bbn_closable == 'yes' ): ?>
-					<span class="close" data-dismiss="alert" aria-label="close">&times;</span>
+					<span class="close" data-dismiss="alert" aria-label="close"><i class="fa fa-times" aria-hidden="true"></i></span>
 				<?php endif; ?>
 
-				<?php if( $settings->bbn_icon_align == 'before' ): ?>
-					<i class="<?php echo $settings->bbn_icon_field; ?>"></i>
-				<?php endif; ?>
+	    		<span class="bbn_information ">
+	    			<div class="alert-padding">
+	    			<?php if( $settings->bbn_icon_align == 'before' ): ?>
+						<i class="<?php echo $settings->bbn_icon_field; ?>"></i>
+					<?php endif; ?>
 
-	    		<span class="bbn_information"><?php echo $settings->bbn_textarea_field; ?></span>
+	    			<?php echo $settings->bbn_textarea_field; ?>
 
-	    		<?php if( $settings->bbn_icon_align == 'after' ): ?>
-	    			<i class="<?php echo $settings->bbn_icon_field; ?>"></i>
-				<?php endif; ?>
+	    			<?php if( $settings->bbn_icon_align == 'after' ): ?>
+	    				<i class="<?php echo $settings->bbn_icon_field; ?>"></i>
+					<?php endif; ?>
+					</div>
+	    		</span>
 
 	    	</div>
 
-	<?php if($navigation): ?>
+	<?php if(!$navigation): ?>
 		</a>
 	<?php endif; ?>
 
