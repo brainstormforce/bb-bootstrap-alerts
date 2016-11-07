@@ -1,8 +1,47 @@
-/**
- * This file should contain frontend styles that 
- * will be applied to all module instances.
- */
-
-.bb-bootstrap-alerts-common a:hover {
+.bb-bootstrap-alerts a:hover {
     text-decoration:none;
+}
+.bb-bootstrap-alerts .alert {
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.bb-bootstrap-alerts .fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+.bb-bootstrap-alerts .fade.in {
+    opacity: 1;
+}
+.bb-bootstrap-alerts .alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.bb-bootstrap-alerts .alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.bb-bootstrap-alerts .alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.bb-bootstrap-alerts .alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.bb-bootstrap-alerts .close {
+    float: right;
+    margin: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
 }

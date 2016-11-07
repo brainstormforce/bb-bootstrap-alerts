@@ -10,9 +10,23 @@
 define( 'BB_NOTIFICATIONS_DIR', plugin_dir_path( __FILE__ ) );
 define( 'BB_NOTIFICATIONS_URL', plugins_url( '/', __FILE__ ) );
 
-function bsf_bb_alerts() {
-    if ( class_exists( 'FLBuilder' ) ) {
-    	 require_once 'bb-bootstrap-alerts-module/bb-bootstrap-alerts-module.php';
+
+if ( !class_exists( 'BSFBBAlerts' ) ) {
+
+    class BSFBBAlerts
+    {
+    	
+        function __construct() {
+
+            add_action( 'init', array( $this, 'load_bb_alerts' ) );
+        }
+
+        function load_bb_alerts() {
+		    if ( class_exists( 'FLBuilder' ) ) {
+		    	require_once 'bb-bootstrap-alerts-module/bb-bootstrap-alerts-module.php';
+		    }
+		}
     }
+
+    new BSFBBAlerts();
 }
-add_action( 'init', 'bsf_bb_alerts' );

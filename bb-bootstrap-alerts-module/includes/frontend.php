@@ -1,33 +1,8 @@
-<?php
+<!-- Bootstrap alert start -->
+<div class="bb-bootstrap-alerts">
 
-/**
- * This file should be used to render each module instance.
- * You have access to two variables in this file: 
- * 
- * $module An instance of your module class.
- * $settings The module's settings.
- *
- * Example: 
- */
-
-?>
-<div class="bb-bootstrap-alerts-common">
-	<?php
-		$nav_link="#";
-		$nav_target="_self";
-		$navigation=0;
-		if($settings->bbn_dropdown_link=='yes')
-		{
-			$nav_link=$settings->bbn_navigation_link;
-			$nav_target=$settings->bbn_navigation_target;
-		}
-		if($settings->bbn_dropdown_link=='no')
-		{
-			$navigation=1;
-		}
-	?>
-	<?php if(!$navigation): ?>
-		<a href="<?php echo $nav_link;?>" target="<?php echo $nav_target;?>" >
+	<?php if($settings->bbn_dropdown_link=='yes'): ?>
+		<a href="<?php echo ($nav_link=$settings->bbn_navigation_link != '')? $nav_link=$settings->bbn_navigation_link : '#' ;?>" target="<?php echo $nav_target=$settings->bbn_navigation_target;?>" >
 	<?php endif; ?>
 
 			<div class="alert <?php echo $settings->bbn_dropdown_field; ?> fade in" >
@@ -49,11 +24,9 @@
 					<?php endif; ?>
 					</div>
 	    		</span>
-
 	    	</div>
-
-	<?php if(!$navigation): ?>
+	<?php if($settings->bbn_dropdown_link=='yes'): ?>
 		</a>
 	<?php endif; ?>
-
-</div>
+</div> 
+<!-- Bootstrap alert end -->
