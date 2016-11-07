@@ -58,6 +58,7 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                         'alert-custom'       => __( 'Custom', 'fl-builder' )
                         ),
                     'default'       => '',
+                    'help'          => "If you want to change colors select 'Custom' option in dropdown",
                     'toggle'        => array(
 
                             // dependency fields on custom dropdown item
