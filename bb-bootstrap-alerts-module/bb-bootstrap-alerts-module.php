@@ -82,7 +82,7 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
 
                             // dependency fields on custom dropdown item
                             'alert-custom'    => array(
-                            'fields'          => array( 'bbn_font_color','bbn_background_color','bbn_border_color','bbn_border_size','bbn_border_style','bbn_border_radius' ),
+                            'fields'          => array( 'bbn_font_color','bbn_background_color','bbn_border_style','bbn_border_radius' ),
                             ),
                         'no'      => array()
                         )
@@ -100,6 +100,35 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     'type'                 => 'color',
                     'label'                => __('Custom Background Color', 'fl-builder'),
                     'show_reset'           => true,
+                    ),
+
+                    // custom border style
+                    'bbn_border_style' => array(
+                    'type'          => 'select',
+                    'label'         => __('Border Style', 'fl-builder'),
+                    'options'       => array(
+                        'solid'      => __( 'Solid', 'fl-builder' ),
+                        'dotted'     => __( 'Dotted', 'fl-builder' ),
+                        'dashed'     => __( 'Dashed', 'fl-builder' ),
+                        'double'     => __( 'Double', 'fl-builder' ),
+                        'groove'     => __( 'Groove', 'fl-builder' ),
+                        'ridge'      => __( 'Ridge', 'fl-builder' ),
+                        'inset'      => __( 'Inset', 'fl-builder' ),
+                        'outset'     => __( 'Outset', 'fl-builder' ),
+                        'none'       => __( 'None', 'fl-builder' )
+                        ),
+                    'default'       => 'none',
+                    'help'          => 'Style of the border',
+                    'toggle'        => array(
+                            'solid'    => array('fields'=> array('bbn_border_color','bbn_border_size' )),
+                            'dotted'    => array('fields'=> array('bbn_border_color','bbn_border_size' )),
+                            'dashed'    => array('fields'=> array('bbn_border_color','bbn_border_size' )),
+                            'double'    => array('fields'=> array('bbn_border_color','bbn_border_size' )),
+                            'groove'    => array('fields'=> array('bbn_border_color','bbn_border_size' )),
+                            'ridge'    => array('fields'=> array('bbn_border_color','bbn_border_size' )),
+                            'inset'    => array('fields'=> array('bbn_border_color','bbn_border_size' )),
+                            'outset'    => array('fields'=> array('bbn_border_color','bbn_border_size' )),
+                        )
                     ),
 
                     // custom border color
@@ -121,29 +150,10 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     'help'          => 'In Pixel Only',
                     ),  
 
-                    // custom border style
-                    'bbn_border_style' => array(
-                    'type'          => 'select',
-                    'label'         => __('Border Style', 'fl-builder'),
-                    'options'       => array(
-                        'solid'      => __( 'Solid', 'fl-builder' ),
-                        'dotted'     => __( 'Dotted', 'fl-builder' ),
-                        'dashed'     => __( 'Dashed', 'fl-builder' ),
-                        'double'     => __( 'Double', 'fl-builder' ),
-                        'groove'     => __( 'Groove', 'fl-builder' ),
-                        'ridge'      => __( 'Ridge', 'fl-builder' ),
-                        'inset'      => __( 'Inset', 'fl-builder' ),
-                        'outset'     => __( 'Outset', 'fl-builder' ),
-                        'none'       => __( 'None', 'fl-builder' )
-                        ),
-                    'default'       => 'solid',
-                    'help'          => 'Style of the border',
-                    ),
-
                     // custom border radius
                     'bbn_border_radius' => array(          
                         'type'          => 'text',
-                        'label'         => __('Border Radius', 'fl-builder'),
+                        'label'         => __('Corner Radius', 'fl-builder'),
                         'maxlength'     => '3',
                         'size'          => '4',
                         'placeholder'   => '4',
