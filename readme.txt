@@ -24,7 +24,7 @@ Simple Bootstrap Alerts for Beaver Builder. It can provide Alerts as per bootstr
 
 == Installation ==
 
-1. Be sure that you have the [Beaver Builder Plugin](https://goo.gl/rYCvGw) installed and activated.
+1. Be sure that you have the [Beaver Builder Plugin](https://goo.gl/rYCvGw "Beaver Builder") installed and activated.
 
 2. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
 
