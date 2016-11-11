@@ -1,5 +1,6 @@
 === BB Bootstrap Alerts ===
 Contributors: brainstormforce
+Donate link: https://www.brainstormforce.com/payment/
 Requires at least: 4.4
 Tags: beaver builder, page builder plugin, alerts, notification, bootstrap, drag and drop alerts, bb bootstrap, bb alerts, bb notification
 Stable tag: 1.0
@@ -11,7 +12,7 @@ Simple Bootstrap Alerts for Beaver Builder.
 
 == Description ==
 
-Simple Bootstrap Alerts for Beaver Builder.
+Simple Bootstrap Alerts for Beaver Builder. It can provide Alerts as per bootstrap classes or you can style your alerts custom.
 
 == Installation ==
 
