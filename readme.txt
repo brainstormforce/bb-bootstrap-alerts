@@ -8,7 +8,7 @@ Requires at least: 4.4
 
 Tags: beaver builder, page builder plugin, alerts, notification, bootstrap, drag and drop alerts, bb bootstrap, bb alerts, bb notification
 
-Stable tag: 1.0
+Stable tag: 1.0.0
 
 Tested up to: 4.6.1
 
