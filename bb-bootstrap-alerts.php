@@ -50,7 +50,7 @@ if ( !class_exists( 'BSFBBAlerts' ) ) {
             }
 
             echo '<div class="notice notice-error">';
-            echo "<p>The <strong>Bootstrap Alerts For Beaver Builder</strong> " . __( 'plugin requires', 'uabb' )." <strong><a href='".$url."'>Beaver Builder</strong></a>" . __( ' plugin installed & activated.', 'uabb' ) . "</p>";
+            echo "<p>The <strong>Bootstrap Alerts For Beaver Builder</strong> " . __( 'plugin requires', 'bb-bootstrap-alerts' )." <strong><a href='".$url."'>Beaver Builder</strong></a>" . __( ' plugin installed & activated.', 'bb-bootstrap-alerts' ) . "</p>";
             echo '</div>';
         }
     }
