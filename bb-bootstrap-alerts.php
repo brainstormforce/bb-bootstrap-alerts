@@ -20,6 +20,7 @@ if ( !class_exists( 'BSFBBAlerts' ) ) {
         function __construct() {
 
             add_action( 'init', array( $this, 'load_bb_alerts' ) );
+            $this->load_textdomain();
         }
 
         // function to load BB Alerts
@@ -36,6 +37,11 @@ if ( !class_exists( 'BSFBBAlerts' ) ) {
                 add_action('network_admin_notices',array($this,'admin_notices_function'));
             }
 		}
+
+        // function to load text domain
+        public function load_textdomain() {
+            load_plugin_textdomain( 'bb-bootstrap-alerts' );
+        }
 
         // function to display admin notice
         function admin_notices_function() {
