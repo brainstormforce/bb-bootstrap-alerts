@@ -61,3 +61,10 @@
 .fl-node-<?php echo $id; ?> .close {
 	font-size: <?php echo ($settings->bbn_close_btn_size !='') ? $settings->bbn_close_btn_size : '21' ; ?>px;
 }
+
+/* for cookie base notification */
+<?php if( ($settings->bbn_closable == 'yes') && ($settings->bbn_appearance != '' || $settings->bbn_appearance != '0' ) ): ?>
+.fl-node-<?php echo $id; ?> .bb-bootstrap-alerts {
+	/*display:none;*/
+}
+<?php endif ?>

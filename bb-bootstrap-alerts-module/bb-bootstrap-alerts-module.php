@@ -12,8 +12,9 @@ class BSFBBNotifications extends FLBuilderModule {
         ));
         // Already registered
         $this->add_css('font-awesome');
-        //enqueueing bootstrap
+        //enqueueing bootstrap and cookie js
         $this->add_js('bbn_boot', $this->url . 'js/bootstrap_alerts.js', array(), '', true);
+        $this->add_js('bbn_cookie', $this->url . 'js/js_cookie.js', array(), '', true);
 	}
 }
 
@@ -47,10 +48,20 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
 
                             // dependency fields on custom dropdown item
                             'yes'    => array(
-                            'fields'          => array( 'bbn_close_btn_size'),
+                            'fields'          => array( 'bbn_appearance','bbn_close_btn_size'),
                             ),
                         'no'      => array()
                         )
+                    ),
+                    // appereance effect
+                    'bbn_appearance'     => array(          
+                    'type'          => 'text',
+                    'label'         => __('Appearance Duration', 'bb-bootstrap-alerts'),
+                    'maxlength'     => '3',
+                    'size'          => '3',
+                    'placeholder'   => '0',
+                    'description'   => 'Days',
+                    'help'          => __('Appearance Duration of Alert Box After Close', 'bb-bootstrap-alerts'),
                     ),
                     // close button size
                     'bbn_close_btn_size'     => array(          
