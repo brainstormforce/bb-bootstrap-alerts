@@ -15,7 +15,7 @@
 			jQuery(element).hide();
 		}
 		var alert= this;
-		var selector='.fl-node-'+this.node;
+		var selector='.fl-node-'+this.node+' .close';
 		jQuery(selector).click(function(){
 			alert._setCookie();
 		});
@@ -28,7 +28,7 @@
 
 		_setCookie: function() {
 			$this = this;
-			var $cookie_duration = ($this.duration);
+			var $cookie_duration = Math.round($this.duration);
 			var $cookie_name = 'bbba-'+$this.node;
 			Cookies.set($cookie_name,'1',{ expires: $cookie_duration });
 		}
