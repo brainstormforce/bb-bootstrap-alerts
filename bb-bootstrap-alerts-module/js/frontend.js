@@ -15,7 +15,8 @@
 			jQuery(element).hide();
 		}
 		var alert= this;
-		jQuery(".close").click(function(){
+		var selector='.fl-node-'+this.node;
+		jQuery(selector).click(function(){
 			alert._setCookie();
 		});
 	};
