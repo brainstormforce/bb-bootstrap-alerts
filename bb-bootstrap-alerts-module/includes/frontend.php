@@ -1,4 +1,12 @@
 <!-- Bootstrap alert start -->
+<?php $name = 'bbba-'.$module->node; ?>
+ <?php $is_enable=true; ?>
+<?php if( ! FLBuilderModel::is_builder_active() ) { ?>
+	<?php if( isset( $_COOKIE[$name] ) && $_COOKIE[$name] != null ):
+		$is_enable=false;
+	endif ?>
+<?php  } ?>
+<?php if( $is_enable ): ?>
 <div class="bb-bootstrap-alerts">
 
 	<!-- Navigation Link -->
@@ -39,3 +47,4 @@
 	
 </div> 
 <!-- Bootstrap alert end -->
+<?php endif ?>

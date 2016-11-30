@@ -47,3 +47,7 @@
     filter: alpha(opacity=20);
     opacity: .2;
 }
+.bb-bootstrap-alerts p {
+    display: inline;
+    margin: 0;
+}

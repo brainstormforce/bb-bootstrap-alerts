@@ -23,13 +23,12 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
         'title'         => __('General', 'bb-bootstrap-alerts'),
         'sections'      => array(
             'general'       => array( // Section
-                'title'         => __('General', 'bb-bootstrap-alerts'),
+                'title'         => __('Message', 'bb-bootstrap-alerts'),
                 'fields'        => array(
 
                     // message field
                     'bbn_textarea_field' => array(
                     'type'               => 'editor',
-                    'label'              => __('Message to display', 'bb-bootstrap-alerts'),
                     'media_buttons' => false,
                     'rows'               => '5' 
                     ),
