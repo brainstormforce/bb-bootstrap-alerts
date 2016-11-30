@@ -63,6 +63,19 @@ color:<?php echo ($settings->bbn_icon_color == '') ? 'inherit' : "#" . $settings
     }
 <?php } ?>
 
+<<<<<<< HEAD
+.fl-node-<?php echo $id; ?> .close {
+	font-size: <?php echo ($settings->bbn_close_btn_size !='') ? $settings->bbn_close_btn_size : '21' ; ?>px;
+}
+
+/* for cookie base notification */
+<?php if( ($settings->bbn_closable == 'yes') && ($settings->bbn_appearance != '' || $settings->bbn_appearance != '0' ) ): ?>
+.fl-node-<?php echo $id; ?> .bb-bootstrap-alerts {
+	/*display:none;*/
+}
+<?php endif ?>
+=======
 .fl-node-<?php echo $id; ?>.close {
 font-size:<?php echo ($settings->bbn_close_btn_size != '') ? $settings->bbn_close_btn_size : '21'; ?>px;
 }
+>>>>>>> 6c9168b86a79d674aff21397c32f0036496423f0

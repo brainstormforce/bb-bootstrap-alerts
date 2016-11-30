@@ -1,3 +1,6 @@
+.fl-builder-edit .bb-bootstrap-alerts {
+    display: block !important;
+}
 .bb-bootstrap-alerts a:hover {
     text-decoration: none;
 }
