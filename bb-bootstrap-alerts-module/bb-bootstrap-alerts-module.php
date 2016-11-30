@@ -28,9 +28,9 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
 
                     // message field
                     'bbn_textarea_field' => array(
-                    'type'               => 'textarea',
+                    'type'               => 'editor',
                     'label'              => __('Message to display', 'bb-bootstrap-alerts'),
-                    'placeholder'        => __('Message', 'bb-bootstrap-alerts'),
+                    'media_buttons' => false,
                     'rows'               => '5' 
                     ),
 
