@@ -56,7 +56,7 @@ if ( !class_exists( 'BSFBBAlerts' ) ) {
             }
 
             echo '<div class="notice notice-error">';
-            echo "<p>The <strong>Bootstrap Alerts For Beaver Builder</strong> " . __( 'plugin requires', 'uabb' )." <strong><a href='".$url."'>Beaver Builder</strong></a>" . __( ' plugin installed & activated.', 'uabb' ) . "</p>";
+            echo "<p>". sprintf( __( 'The <strong>Bootstrap Alerts For Beaver Builder</strong> plugin requires <strong><a href="%s">Beaver Builder</strong></a> plugin installed & activated.' , 'bb-bootstrap-alerts' ), $url ) ."</p>";
             echo '</div>';
         }
     }
