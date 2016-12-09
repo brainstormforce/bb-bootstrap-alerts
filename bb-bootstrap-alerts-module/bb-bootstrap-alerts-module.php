@@ -4,7 +4,7 @@ class BSFBBNotifications extends FLBuilderModule {
 	public function __construct()
 	{
 		parent::__construct(array(
-            'name'          => __('BB Bootstrap Alerts', 'bb-bootstrap-alerts'),
+            'name'          => __('Bootstrap Alerts for Beaver Builder', 'bb-bootstrap-alerts'),
             'description'   => __('Simple Bootstrap Alerts Modules', 'bb-bootstrap-alerts'),
             'category'		=> __('Advanced Modules', 'bb-bootstrap-alerts'),
             'dir'           => BB_BALERTS_DIR . 'bb-bootstrap-alerts-module/',
