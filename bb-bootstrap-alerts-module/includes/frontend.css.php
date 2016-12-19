@@ -18,7 +18,7 @@
 }
 
 /* custom notification type field css */
-.fl-node-<?php echo $id; ?> .alert-custom {
+.fl-node-<?php echo $id; ?> .alert.alert-custom {
 	color: #<?php echo $settings->bbn_font_color; ?>;
 	background-color: #<?php echo $settings->bbn_background_color; ?>;
 	border-color: #<?php echo $settings->bbn_border_color; ?>;
