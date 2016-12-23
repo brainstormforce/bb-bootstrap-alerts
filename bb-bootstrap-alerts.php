@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: Bootstrap Alerts For Beaver Builder
+ * Plugin Name: Beaver Builder Alerts
  * Plugin URI: http://www.brainstormforce.com
  * Description: This is the plugin to create predefined alert messages.
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: Brainstorm Force
  * Author URI: https://www.brainstormforce.com/
- * Text Domain: bb-bootstrap-alerts
+ * Text Domain: bb-alerts
  */
 define( 'BB_BALERTS_DIR', plugin_dir_path( __FILE__ ) );
 define( 'BB_BALERTS_URL', plugins_url( '/', __FILE__ ) );
@@ -40,7 +40,7 @@ if ( !class_exists( 'BSFBBAlerts' ) ) {
 
         // function to load text domain
         public function load_textdomain() {
-            load_plugin_textdomain( 'bb-bootstrap-alerts' );
+            load_plugin_textdomain( 'bb-alerts' );
         }
 
         // function to display admin notice
@@ -56,7 +56,7 @@ if ( !class_exists( 'BSFBBAlerts' ) ) {
             }
 
             echo '<div class="notice notice-error">';
-            echo "<p>". sprintf( __( 'The <strong>Bootstrap Alerts For Beaver Builder</strong> plugin requires <strong><a href="%s">Beaver Builder</strong></a> plugin installed & activated.' , 'bb-bootstrap-alerts' ), $url ) ."</p>";
+            echo "<p>". sprintf( __( 'The <strong>Bootstrap Alerts For Beaver Builder</strong> plugin requires <strong><a href="%s">Beaver Builder</strong></a> plugin installed & activated.' , 'bb-alerts' ), $url ) ."</p>";
             echo '</div>';
         }
     }

@@ -1,9 +1,9 @@
-=== Bootstrap Alerts For Beaver Builder ===
+=== Beaver Builder Alerts ===
 Contributors: brainstormforce, akashd
 Donate link: https://www.brainstormforce.com/payment/
 Requires at least: 4.4
-Tags: beaver builder, page builder plugin, alerts, notification, bootstrap, drag and drop alerts, bb bootstrap, bb alerts, bb notification
-Stable tag: 1.1.0
+Tags: beaver builder, alerts, notification, bootstrap, drag and drop alerts, bb alerts, bb notification,alert box
+Stable tag: 1.2.0
 Tested up to: 4.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -22,6 +22,12 @@ Cookie based notification will allow you to display the alert after particular d
 1. Find this module in `Page Builder` -> `Add Content` -> `Advance Modules` -> `BB Bootstrap Alerts`
 
 == Changelog ==
+
+= 1.2.0 =
+- Fixed some minor bugs
+- Increased limit of days for cookies base notification
+- Changed Plugin name from `Bootstrap Alerts For Beaver Builder` to `Beaver Builder Alerts`
+- Changed text domain
 
 = 1.1.0 =
 - Added cookie based notification

@@ -4,9 +4,9 @@ class BSFBBNotifications extends FLBuilderModule {
 	public function __construct()
 	{
 		parent::__construct(array(
-            'name'          => __('Bootstrap Alerts for Beaver Builder', 'bb-bootstrap-alerts'),
-            'description'   => __('Simple Bootstrap Alerts Modules', 'bb-bootstrap-alerts'),
-            'category'		=> __('Advanced Modules', 'bb-bootstrap-alerts'),
+            'name'          => __('Beaver Builder Alerts', 'bb-alerts'),
+            'description'   => __('Simple Bootstrap Alerts Modules', 'bb-alerts'),
+            'category'		=> __('Advanced Modules', 'bb-alerts'),
             'dir'           => BB_BALERTS_DIR . 'bb-bootstrap-alerts-module/',
             'url'           => BB_BALERTS_URL . 'bb-bootstrap-alerts-module/',
         ));
@@ -20,10 +20,10 @@ class BSFBBNotifications extends FLBuilderModule {
 
 FLBuilder::register_module( 'BSFBBNotifications', array(
 	'general'       => array( // Tab
-        'title'         => __('General', 'bb-bootstrap-alerts'),
+        'title'         => __('General', 'bb-alerts'),
         'sections'      => array(
             'general'       => array( // Section
-                'title'         => __('Message', 'bb-bootstrap-alerts'),
+                'title'         => __('Message', 'bb-alerts'),
                 'fields'        => array(
 
                     // message field
@@ -36,13 +36,13 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     // closable button
                     'bbn_closable'   => array(
                     'type'           => 'select',
-                    'label'          => __('Closable', 'bb-bootstrap-alerts'),
+                    'label'          => __('Closable', 'bb-alerts'),
                     'options'        => array(
-                        'yes'           => __( 'Yes', 'bb-bootstrap-alerts' ),                            
-                        'no'            => __( 'No', 'bb-bootstrap-alerts' )
+                        'yes'           => __( 'Yes', 'bb-alerts' ),                            
+                        'no'            => __( 'No', 'bb-alerts' )
                         ),
                     'default'       => 'yes',
-                    'help'          => __('Alert will able to close if set to YES','bb-bootstrap-alerts'),
+                    'help'          => __('Alert will able to close if set to YES','bb-alerts'),
                     'toggle'        => array(
 
                             // dependency fields on custom dropdown item
@@ -55,38 +55,38 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     // appereance effect
                     'bbn_appearance'     => array(          
                     'type'          => 'text',
-                    'label'         => __('Appearance Duration', 'bb-bootstrap-alerts'),
-                    'maxlength'     => '3',
-                    'size'          => '3',
+                    'label'         => __('Set Cookie Duration', 'bb-alerts'),
+                    'maxlength'     => '10',
+                    'size'          => '10',
                     'placeholder'   => '0',
                     'description'   => 'Days',
-                    'help'          => __('Appearance Duration of Alert Box After Close', 'bb-bootstrap-alerts'),
+                    'help'          => __('Once closed, the alert will not be displayed for the specified number of days.', 'bb-alerts'),
                     ),
                     // close button size
                     'bbn_close_btn_size'     => array(          
                     'type'          => 'text',
-                    'label'         => __('Close Button Size (Optional)', 'bb-bootstrap-alerts'),
+                    'label'         => __('Close Button Size (Optional)', 'bb-alerts'),
                     'maxlength'     => '2',
                     'size'          => '3',
                     'placeholder'   => '21',
                     'class'         => 'my-css-class',
                     'description'   => 'px',
-                    'help'          => __('Set only if it required', 'bb-bootstrap-alerts'),
+                    'help'          => __('Set only if it required', 'bb-alerts'),
                     ),
 
                     // notification type dropdown
                     'bbn_dropdown_field' => array(
                     'type'          => 'select',
-                    'label'         => __('Notification Type', 'bb-bootstrap-alerts'),
+                    'label'         => __('Notification Type', 'bb-alerts'),
                     'options'       => array(
-                        'alert-success'      => __( 'Success', 'bb-bootstrap-alerts' ),
-                        'alert-info'         => __( 'Information', 'bb-bootstrap-alerts' ),
-                        'alert-warning'      => __( 'Warning', 'bb-bootstrap-alerts' ),
-                        'alert-danger'       => __( 'Danger', 'bb-bootstrap-alerts' ),
-                        'alert-custom'       => __( 'Custom', 'bb-bootstrap-alerts' )
+                        'alert-success'      => __( 'Success', 'bb-alerts' ),
+                        'alert-info'         => __( 'Information', 'bb-alerts' ),
+                        'alert-warning'      => __( 'Warning', 'bb-alerts' ),
+                        'alert-danger'       => __( 'Danger', 'bb-alerts' ),
+                        'alert-custom'       => __( 'Custom', 'bb-alerts' )
                         ),
                     'default'       => '',
-                    'help'          => __("If you want to change colors select 'Custom' option in dropdown. Default colors are as per Bootstrap",'bb-bootstrap-alerts'),
+                    'help'          => __("If you want to change colors select 'Custom' option in dropdown. Default colors are as per Bootstrap",'bb-alerts'),
                     'toggle'        => array(
 
                             // dependency fields on custom dropdown item
@@ -100,34 +100,34 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     // custom font color
                     'bbn_font_color' => array(
                     'type'           => 'color',
-                    'label'          => __('Custom Font Color', 'bb-bootstrap-alerts'),
+                    'label'          => __('Custom Font Color', 'bb-alerts'),
                     'show_reset'     => true,
                     ),
 
                     // custom background color
                     'bbn_background_color' => array(
                     'type'                 => 'color',
-                    'label'                => __('Custom Background Color', 'bb-bootstrap-alerts'),
+                    'label'                => __('Custom Background Color', 'bb-alerts'),
                     'show_reset'           => true,
                     ),
 
                     // custom border style
                     'bbn_border_style' => array(
                     'type'          => 'select',
-                    'label'         => __('Border Style', 'bb-bootstrap-alerts'),
+                    'label'         => __('Border Style', 'bb-alerts'),
                     'options'       => array(
-                        'solid'      => __( 'Solid', 'bb-bootstrap-alerts' ),
-                        'dotted'     => __( 'Dotted', 'bb-bootstrap-alerts' ),
-                        'dashed'     => __( 'Dashed', 'bb-bootstrap-alerts' ),
-                        'double'     => __( 'Double', 'bb-bootstrap-alerts' ),
-                        'groove'     => __( 'Groove', 'bb-bootstrap-alerts' ),
-                        'ridge'      => __( 'Ridge', 'bb-bootstrap-alerts' ),
-                        'inset'      => __( 'Inset', 'bb-bootstrap-alerts' ),
-                        'outset'     => __( 'Outset', 'bb-bootstrap-alerts' ),
-                        'none'       => __( 'None', 'bb-bootstrap-alerts' )
+                        'solid'      => __( 'Solid', 'bb-alerts' ),
+                        'dotted'     => __( 'Dotted', 'bb-alerts' ),
+                        'dashed'     => __( 'Dashed', 'bb-alerts' ),
+                        'double'     => __( 'Double', 'bb-alerts' ),
+                        'groove'     => __( 'Groove', 'bb-alerts' ),
+                        'ridge'      => __( 'Ridge', 'bb-alerts' ),
+                        'inset'      => __( 'Inset', 'bb-alerts' ),
+                        'outset'     => __( 'Outset', 'bb-alerts' ),
+                        'none'       => __( 'None', 'bb-alerts' )
                         ),
                     'default'       => 'none',
-                    'help'          => __('Style of the border','bb-bootstrap-alerts'),
+                    'help'          => __('Style of the border','bb-alerts'),
                     'toggle'        => array(
                             'solid'    => array('fields'=> array('bbn_border_color','bbn_border_size' )),
                             'dotted'    => array('fields'=> array('bbn_border_color','bbn_border_size' )),
@@ -143,51 +143,51 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     // custom border color
                     'bbn_border_color' => array(
                     'type'             => 'color',
-                    'label'            => __('Custom Border Color', 'bb-bootstrap-alerts'),
+                    'label'            => __('Custom Border Color', 'bb-alerts'),
                     'show_reset'       => true,
                     ),
 
                     // custom border size
                     'bbn_border_size'     => array(          
                     'type'          => 'text',
-                    'label'         => __('Border Size', 'bb-bootstrap-alerts'),
+                    'label'         => __('Border Size', 'bb-alerts'),
                     'maxlength'     => '2',
                     'size'          => '3',
                     'placeholder'   => '1',
                     'class'         => 'my-css-class',
                     'description'   => 'px',
-                    'help'          => __('In Pixel Only','bb-bootstrap-alerts'),
+                    'help'          => __('In Pixel Only','bb-alerts'),
                     ),  
 
                     // custom border radius
                     'bbn_border_radius' => array(          
                         'type'          => 'text',
-                        'label'         => __('Corner Radius', 'bb-bootstrap-alerts'),
+                        'label'         => __('Corner Radius', 'bb-alerts'),
                         'maxlength'     => '3',
                         'size'          => '4',
                         'placeholder'   => '4',
                         'class'         => 'my-css-class',
                         'description'   => 'px',
-                        'help'          => __('In Pixel Only','bb-bootstrap-alerts'),
+                        'help'          => __('In Pixel Only','bb-alerts'),
                     ),           
                 ), // fields
             ), // General end 
 
             // link section
             'bbn_link'       => array(
-                'title'         => __('Link', 'bb-bootstrap-alerts'),
+                'title'         => __('Link', 'bb-alerts'),
                 'fields'        => array(
 
                  // link dropdown
                 'bbn_dropdown_link' => array(                  
                     'type'            => 'select',
-                    'label'           => __('Link', 'bb-bootstrap-alerts'),
+                    'label'           => __('Link', 'bb-alerts'),
                     'options'         => array(
-                        'no'  => __( 'No', 'bb-bootstrap-alerts' ),
-                        'yes' => __( 'Yes', 'bb-bootstrap-alerts' )
+                        'no'  => __( 'No', 'bb-alerts' ),
+                        'yes' => __( 'Yes', 'bb-alerts' )
                         ),
                     'default'         => 'no',
-                    'help'            => __('Alert box will able to redirect to the given link','bb-bootstrap-alerts'),
+                    'help'            => __('Alert box will able to redirect to the given link','bb-alerts'),
                     'toggle'          => array(
                         'yes'      => array(
                         'fields'   => array( 'bbn_navigation_link', 'bbn_navigation_target'),
@@ -198,17 +198,17 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                 // link
                 'bbn_navigation_link' => array(                 
                     'type'          => 'link',
-                    'label'         => __('Link Address', 'bb-bootstrap-alerts'),
-                    'placeholder'   => __('http://', 'bb-bootstrap-alerts')
+                    'label'         => __('Link Address', 'bb-alerts'),
+                    'placeholder'   => __('http://', 'bb-alerts')
                     ),
 
                 // link target
                 'bbn_navigation_target' => array(
                     'type'          => 'select',
-                    'label'         => __('Link Target', 'bb-bootstrap-alerts'),
+                    'label'         => __('Link Target', 'bb-alerts'),
                     'options'       => array(
-                        '_self'      => __( 'Same Window', 'bb-bootstrap-alerts' ),
-                        '_blank'     => __( 'New Window', 'bb-bootstrap-alerts' )
+                        '_self'      => __( 'Same Window', 'bb-alerts' ),
+                        '_blank'     => __( 'New Window', 'bb-alerts' )
                         ),
                 'default'               => 'no',
                     ),
@@ -217,18 +217,18 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
 
             // structure section
             'bbn_structure'       => array(
-                'title'        => __('Structure', 'bb-bootstrap-alerts'),
+                'title'        => __('Structure', 'bb-alerts'),
                 'fields'       => array(
                     'bbn_text_align'    => array(
                         'type'          => 'select',
-                        'label'         => __('Alignment', 'bb-bootstrap-alerts'),
+                        'label'         => __('Alignment', 'bb-alerts'),
                         'default'       => 'left',
                         'options'       => array(
-                            'left'      => __( 'Left', 'bb-bootstrap-alerts' ),
-                            'right'     => __( 'Right', 'bb-bootstrap-alerts' ),
-                            'center'    => __( 'Center', 'bb-bootstrap-alerts' )
+                            'left'      => __( 'Left', 'bb-alerts' ),
+                            'right'     => __( 'Right', 'bb-alerts' ),
+                            'center'    => __( 'Center', 'bb-alerts' )
                         ),
-                        'help'          => __("Overall Alignment of the Structure",'bb-bootstrap-alerts'),
+                        'help'          => __("Overall Alignment of the Structure",'bb-alerts'),
                         'preview'       => array(
                             'type'        => 'css',
                             'selector'    => '.bb-bootstrap-alerts',
@@ -240,11 +240,11 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
 
             // padding section
             'bbn_padding'       => array(
-                'title'         => __('Padding', 'bb-bootstrap-alerts'),
+                'title'         => __('Padding', 'bb-alerts'),
                 'fields'        => array(
                     'bbn_padding_top'     => array(                     // padding top
                         'type'          => 'text',
-                        'label'         => __('Padding Top', 'bb-bootstrap-alerts'),
+                        'label'         => __('Padding Top', 'bb-alerts'),
                         'maxlength'     => '3',
                         'size'          => '3',
                         'placeholder'   => '20',
@@ -253,7 +253,7 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     ),
                     'bbn_padding_bottom'  => array(               // padding bottom
                         'type'          => 'text',
-                        'label'         => __('Padding Bottom', 'bb-bootstrap-alerts'),
+                        'label'         => __('Padding Bottom', 'bb-alerts'),
                         'maxlength'     => '3',
                         'size'          => '3',
                         'placeholder'   => '20',
@@ -262,7 +262,7 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     ),
                     'bbn_padding_left'    => array(               // padding left
                         'type'          => 'text',
-                        'label'         => __('Padding Left', 'bb-bootstrap-alerts'),
+                        'label'         => __('Padding Left', 'bb-alerts'),
                         'maxlength'     => '3',
                         'size'          => '3',
                         'placeholder'   => '20',
@@ -271,7 +271,7 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     ),
                     'bbn_padding_right'   => array(               // padding right
                         'type'          => 'text',
-                        'label'         => __('Padding Right', 'bb-bootstrap-alerts'),
+                        'label'         => __('Padding Right', 'bb-alerts'),
                         'maxlength'     => '3',
                         'size'          => '3',
                         'placeholder'   => '20',
@@ -285,29 +285,29 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
 
     // icon tab
     'icon'       => array(
-        'title'         => __('Icon', 'bb-bootstrap-alerts'),
+        'title'         => __('Icon', 'bb-alerts'),
          'sections'      => array(
             'icon'       => array(
-                'title'         => __('Icon', 'bb-bootstrap-alerts'),
+                'title'         => __('Icon', 'bb-alerts'),
                 'fields'        => array(
                     'bbn_icon_field' => array(                    // icon
                         'type'          => 'icon',
-                        'label'         => __( 'Icon Field', 'bb-bootstrap-alerts' ),
+                        'label'         => __( 'Icon Field', 'bb-alerts' ),
                         'show_remove'   => true,
-                        'help'          => __('Select icon to display (Optional)','bb-bootstrap-alerts')
+                        'help'          => __('Select icon to display (Optional)','bb-alerts')
                     ),
                         'bbn_icon_color'=> array(
                         'type'          => 'color',
-                        'label'         => __('Icon Color (Optional)', 'bb-bootstrap-alerts'),
+                        'label'         => __('Icon Color (Optional)', 'bb-alerts'),
                         'show_reset'    => true,
                         ),
                         'bbn_icon_align'=> array(
                             'type'          => 'select',
-                            'label'         => __('Icon Position', 'bb-bootstrap-alerts'),
+                            'label'         => __('Icon Position', 'bb-alerts'),
                             'default'       => 'before',
                             'options'       => array(
-                                'before'  => __( 'Before Text', 'bb-bootstrap-alerts' ),
-                                'after'   => __( 'After Text', 'bb-bootstrap-alerts' ),
+                                'before'  => __( 'Before Text', 'bb-alerts' ),
+                                'after'   => __( 'After Text', 'bb-alerts' ),
                             ),
                         ), 
                     ) // fields
@@ -317,16 +317,16 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
 
     // typography tab
     'typography'       => array(
-        'title'        => __('Typography', 'bb-bootstrap-alerts'),
+        'title'        => __('Typography', 'bb-alerts'),
         'sections'    => array(
             'typography'       => array(
-                'title'         => __('Typography', 'bb-bootstrap-alerts'),
+                'title'         => __('Typography', 'bb-alerts'),
                 'fields'        => array(
 
                     // typography
                     'bbn_font_field' => array(    
                         'type'          => 'font',
-                        'label'         => __( 'Typography', 'bb-bootstrap-alerts' ),
+                        'label'         => __( 'Typography', 'bb-alerts' ),
                         'default'       => array(
                             'family'        => 'Defaults',
                             'weight'        => 'Defaults'
@@ -340,7 +340,7 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     // Font Size
                         'bbn_font_size'     => array(
                         'type'          => 'text',
-                        'label'         => __('Font Size', 'bb-bootstrap-alerts'),
+                        'label'         => __('Font Size', 'bb-alerts'),
                         'placeholder'   => '18',
                         'maxlength'     => '3',
                         'size'          => '5',
@@ -351,7 +351,7 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     // Line Height
                     'bbn_line_height'     => array(
                         'type'          => 'text',
-                        'label'         => __('Line Height', 'bb-bootstrap-alerts'),
+                        'label'         => __('Line Height', 'bb-alerts'),
                         'placeholder'   => '22',
                         'maxlength'     => '3',
                         'size'          => '5',
