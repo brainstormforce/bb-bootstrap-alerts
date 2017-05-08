@@ -3,7 +3,7 @@
  * Plugin Name: Bootstrap Alerts For Beaver Builder
  * Plugin URI: http://www.brainstormforce.com
  * Description: This is the plugin to create predefined alert messages.
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: Brainstorm Force
  * Author URI: https://www.brainstormforce.com/
  * Text Domain: bb-bootstrap-alerts
