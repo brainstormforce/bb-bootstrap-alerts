@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Beaver Builder Alerts
- * Plugin URI: http://www.brainstormforce.com
+ * Plugin URI: https://www.ultimatebeaver.com/beaver-builder-free/bbalerts/
  * Description: This is the plugin to create predefined alert messages.
  * Version: 1.2.0
- * Author: Brainstorm Force
- * Author URI: https://www.brainstormforce.com/
+ * Author: Beaver Builder Addon
+ * Author URI: https://www.ultimatebeaver.com/
  * Text Domain: bb-alerts
  */
 define( 'BB_BALERTS_DIR', plugin_dir_path( __FILE__ ) );
