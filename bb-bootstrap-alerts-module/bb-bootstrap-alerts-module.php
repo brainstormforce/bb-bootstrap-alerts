@@ -30,7 +30,8 @@ FLBuilder::register_module( 'BSFBBNotifications', array(
                     'bbn_textarea_field' => array(
                     'type'               => 'editor',
                     'media_buttons' => false,
-                    'rows'               => '5' 
+                    'rows'               => '5',
+                    'connections'   => array( 'string', 'html' ) 
                     ),
 
                     // closable button
