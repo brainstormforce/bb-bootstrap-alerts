@@ -4,18 +4,11 @@ Donate link: https://www.brainstormforce.com/payment/
 Requires at least: 4.4
 Tags: beaver builder, page builder plugin, alerts, notification, bootstrap, drag and drop alerts, bb bootstrap, bb alerts, bb notification
 Stable tag: 1.2.0
-Tested up to: 4.7
+Tested up to: 4.8.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Url: https://wordpress.org/plugins/bb-bootstrap-alerts/
-Suggestion: https://wordpress.org/plugins/beaver-builder-alerts/
-
-Beaver Builder Alerts
-
 An easy-to-use Beaver Builder addon to display attractive and eye catching alerts on a page.
-
-Tags: beaver builder alerts, beaver builder modules, bootstrap alerts for beaver builder, beaver builder addon, beaver builder, beaver builder extensions, beaver addons, beaver builder free, page builder addons, beaver builder template, beaver builder notifications, customize beaver builder alerts
 
 == Description ==
 
