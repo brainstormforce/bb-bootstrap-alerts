@@ -1,5 +1,5 @@
 === Beaver Builder Alerts ===
-Contributors: brainstormforce, akashd
+Contributors: brainstormforce
 Donate link: https://www.brainstormforce.com/payment/
 Requires at least: 4.4
 Tags: beaver builder, page builder plugin, alerts, notification, bootstrap, drag and drop alerts, bb bootstrap, bb alerts, bb notification
