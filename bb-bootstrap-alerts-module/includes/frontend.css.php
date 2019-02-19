@@ -1,6 +1,6 @@
 /* typography */
 .fl-node-<?php echo $id; ?> {
-<?php if(($settings->bbn_font_field['family']) != 'Default' ): ?>
+<?php if( is_array( $settings->bbn_font_field ) && ( ( $settings->bbn_font_field['family'] ) != 'Default' ) ): ?>
 	font-family:"<?php echo $settings->bbn_font_field['family']; ?>";
 	font-weight:<?php echo ($settings->bbn_font_field['weight'] !='regular') ? $settings->bbn_font_field['weight'] : '500'; ?>;
 <?php endif ?>
