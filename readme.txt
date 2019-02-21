@@ -1,10 +1,10 @@
 === Beaver Builder Alerts ===
-Contributors: brainstormforce, akashd
-Donate link: https://www.brainstormforce.com/payment/
+Contributors: brainstormforce
+Donate link: https://www.paypal.me/BrainstormForce
 Requires at least: 4.4
 Tags: beaver builder, page builder plugin, alerts, notification, bootstrap, drag and drop alerts, bb bootstrap, bb alerts, bb notification
 Stable tag: 1.2.0
-Tested up to: 4.7
+Tested up to: 5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
