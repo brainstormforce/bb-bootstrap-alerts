@@ -1,4 +1,4 @@
-=== Bootstrap Alerts for Beaver Builder ===
+=== Alerts for Beaver Builder ===
 Contributors: brainstormforce
 Donate link: https://www.paypal.me/BrainstormForce
 Requires at least: 4.4
@@ -11,17 +11,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Url: https://wordpress.org/plugins/bb-bootstrap-alerts/
 Suggestion: https://wordpress.org/plugins/beaver-builder-alerts/
 
-Bootstrap Alerts for Beaver Builder
+Alerts for Beaver Builder
 
 An easy-to-use Beaver Builder addon to display attractive and eye catching alerts on a page.
 
-Tags: Bootstrap Alerts for Beaver Builder, beaver builder modules, bootstrap alerts for beaver builder, beaver builder addon, beaver builder, beaver builder extensions, beaver addons, beaver builder free, page builder addons, beaver builder template, beaver builder notifications, customize Bootstrap Alerts for Beaver Builder
+Tags: Alerts for Beaver Builder, beaver builder modules, Alerts for Beaver Builder, beaver builder addon, beaver builder, beaver builder extensions, beaver addons, beaver builder free, page builder addons, beaver builder template, beaver builder notifications, customize Alerts for Beaver Builder
 
 == Description ==
 
-Have you ever looked around for a  <a href=”https://www.ultimatebeaver.com/beaver-builder-free/?utm_source=wp-repo&utm_campaign=%20bbalerts&utm_medium=description”>Beaver Builder Addon</a> that let you display eye-catching alerts on a web-page? Your search is over! The Bootstrap Alerts for Beaver Builder plugin is an addon that can be coupled with Beaver Builder to create attractive alerts in a few easy steps.
+Have you ever looked around for a  <a href=”https://www.ultimatebeaver.com/beaver-builder-free/?utm_source=wp-repo&utm_campaign=%20bbalerts&utm_medium=description”>Beaver Builder Addon</a> that let you display eye-catching alerts on a web-page? Your search is over! The Alerts for Beaver Builder plugin is an addon that can be coupled with Beaver Builder to create attractive alerts in a few easy steps.
 
-The <a href=”https://www.ultimatebeaver.com/beaver-builder-free/bbalerts/?utm_source=wp-repo&utm_campaign=%20bbalerts&utm_medium=description”>Bootstrap Alerts for Beaver Builder</a> plugin adds a customizable module to your list of <a href=”https://www.ultimatebeaver.com/?utm_source=wp-repo&utm_campaign=%20bbalerts&utm_medium=description”>Beaver Builder</a>  modules that can be simply dragged, dropped and customized as per your needs. You can create the following kind of alerts using this plugin.
+The <a href=”https://www.ultimatebeaver.com/beaver-builder-free/bbalerts/?utm_source=wp-repo&utm_campaign=%20bbalerts&utm_medium=description”>Alerts for Beaver Builder</a> plugin adds a customizable module to your list of <a href=”https://www.ultimatebeaver.com/?utm_source=wp-repo&utm_campaign=%20bbalerts&utm_medium=description”>Beaver Builder</a>  modules that can be simply dragged, dropped and customized as per your needs. You can create the following kind of alerts using this plugin.
 
 Simple Alerts : Simple formattable text alerts that can be accompanied by icons and a pretty background color and background.
 
@@ -31,7 +31,7 @@ Cookie based Alerts: Wish to avoid showing up an alert once the user has closed 
 
 Have something to say? Whether you are happy with these features, or wish to see some more, please feel free to share it on our <a href=”https://www.brainstormforce.com/go/uabb-facebook-group/?utm_source=wprepo&utm_campaign=bbalerts&utm_medium=FB”>Facebook group</a> where we have a bunch of active Beaver Builder enthusiasts like you!
 
-= Features of the Bootstrap Alerts for Beaver Builder =
+= Features of the Alerts for Beaver Builder =
 
 Cookie based Alerts allow you to hide an alert for a specified number of days after a user has closed it. This makes your alerts less intrusive!
 Linkable Alerts let you redirect users to another page when he clicks on it. No longer will you need to write long texts within alerts. You simply introduce the matter and take the user to a page that explains it all!
