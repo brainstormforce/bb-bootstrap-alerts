@@ -81,7 +81,7 @@ href=”https://www.brainstormforce.com/go/brainstorm-force-twitter-page/?utm_so
 = 1.2.1 =
 - Fix: PHP illegal warnings and notices for font family and font weight
 
-= 1.2.1 =
+= 1.2.0 =
 * New: Beaver Themer support for field connections.
 
 = 1.1.0 =
