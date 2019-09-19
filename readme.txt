@@ -3,7 +3,7 @@ Contributors: brainstormforce
 Donate link: https://www.paypal.me/BrainstormForce
 Requires at least: 4.4
 Tags: beaver builder, page builder plugin, alerts, notification, bootstrap, drag and drop alerts, bb bootstrap, bb alerts, bb notification
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 Tested up to: 5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -78,7 +78,10 @@ href=”https://www.brainstormforce.com/go/brainstorm-force-twitter-page/?utm_so
 
 == Changelog ==
 
-= 1.2.0 =
+= 1.2.1 =
+- Fix: PHP illegal warnings and notices for font family and font weight
+
+= 1.2.1 =
 * New: Beaver Themer support for field connections.
 
 = 1.1.0 =
