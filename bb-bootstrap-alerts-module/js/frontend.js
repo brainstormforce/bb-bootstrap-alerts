@@ -11,7 +11,7 @@
 
 		if ( Cookies.get(cookie_name)== '1')
 		{
-			var element = '.fl-module-bb-bootstrap-alerts-module.fl-node-'+this.node;
+			var element = '.fl-node-'+this.node+' .bb-bootstrap-alerts';
 			jQuery(element).hide();
 		}
 		var alert= this;
