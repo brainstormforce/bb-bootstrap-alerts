@@ -87,7 +87,7 @@ if (typeof jQuery === 'undefined') {
     var $parent = $(selector)
     if (e) e.preventDefault()
     if (!$parent.length) {
-      $parent = $this.closest('.alert')
+      $parent = $this.closest('.fl-module-bb-bootstrap-alerts-module')
     }
     $parent.trigger(e = $.Event('close.bs.alert'))
     if (e.isDefaultPrevented()) return
