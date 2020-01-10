@@ -5,13 +5,14 @@
 		this.settings = settings;
 		this.node     = settings.id;
 		this.duration = settings.duration;
+		this.is_builder_active = settings.is_builder_active;
 		
 		var cookie_name = 'bbba-'+this.node;
 		
 
-		if ( Cookies.get(cookie_name)== '1')
+		if ( Cookies.get(cookie_name)== '1' && 'yes'!=this.is_builder_active )
 		{
-			var element = '.fl-node-'+this.node+' .bb-bootstrap-alerts';
+			var element = '.fl-module-bb-bootstrap-alerts-module.fl-node-'+this.node+' .fl-module-content';
 			jQuery(element).hide();
 		}
 		var alert= this;
