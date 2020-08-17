@@ -4,7 +4,7 @@ Donate link: https://www.paypal.me/BrainstormForce
 Requires at least: 4.4
 Tags: beaver builder, page builder plugin, alerts, notification, bootstrap, drag and drop alerts, bb bootstrap, bb alerts, bb notification
 Stable tag: 1.2.1
-Tested up to: 5.4
+Tested up to: 5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
