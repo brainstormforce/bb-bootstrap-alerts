@@ -4,8 +4,8 @@
 <?php if(! FLBuilderModel::is_builder_active() ) : ?>
     <?php if(isset($_COOKIE[$name]) && $_COOKIE[$name] != null ) :
         $is_enable=false;
-    endif ?>
-<?php  endif ?>
+	endif; ?>
+<?php  endif; ?>
 <?php if($is_enable ) : ?>
 <div class="bb-bootstrap-alerts">
 
@@ -47,4 +47,4 @@
     
 </div> 
 <!-- Bootstrap alert end -->
-<?php endif ?>
+<?php endif; ?>
