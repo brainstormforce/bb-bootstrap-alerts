@@ -90,3 +90,13 @@ Visit our website to know more about the top WordPress products and services we 
 
 = 1.0.0 =
 - Initial release
+
+== Credits ==
+
+= js-cookie =
+A JavaScript API for handling cookies - https://github.com/js-cookie/js-cookie/
+Licensed under MIT - https://github.com/js-cookie/js-cookie/blob/master/LICENSE
+
+= Boostrap v4.5.3 =
+CSS & JS library used for alerts - https://getbootstrap.com/
+Licensed under MIT - https://github.com/twbs/bootstrap/blob/main/LICENSE
