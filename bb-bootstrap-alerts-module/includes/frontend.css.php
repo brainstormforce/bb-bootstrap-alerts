@@ -2,7 +2,7 @@
 .fl-node-<?php echo $id; ?> {
 <?php if( is_array( $settings->bbn_font_field ) && ( ( $settings->bbn_font_field['family'] ) != 'Default' ) ): ?>
 	font-family:"<?php echo $settings->bbn_font_field['family']; ?>";
-	font-weight:<?php echo ($settings->bbn_font_field['weight'] !='regular') ? $settings->bbn_font_field['weight'] : '500'; ?>;
+	font-weight:<?php echo ( isset( $settings->bbn_font_field['weight'] ) && $settings->bbn_font_field['weight'] !='regular') ? $settings->bbn_font_field['weight'] : '500'; ?>;
 <?php endif ?>
     font-size: <?php echo ($settings->bbn_font_size != '') ? $settings->bbn_font_size : '18'; ?>px;
     line-height: <?php echo ($settings->bbn_line_height != '') ? $settings->bbn_line_height : '22'; ?>px;
