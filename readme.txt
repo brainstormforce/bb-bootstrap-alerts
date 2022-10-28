@@ -1,10 +1,10 @@
 === Alerts for Beaver Builder ===
-Contributors: brainstormforce
+Contributors: pratikchaskar
 Donate link: https://www.paypal.me/BrainstormForce
 Requires at least: 4.4
 Tags: beaver builder, page builder plugin, alerts, notification, bootstrap, drag and drop alerts, bb bootstrap, bb alerts, bb notification
-Stable tag: 1.2.3
-Tested up to: 6.0
+Stable tag: 1.2.4
+Tested up to: 6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -75,6 +75,9 @@ Visit our website to know more about the top WordPress products and services we 
 
 
 == Changelog ==
+
+= 1.2.4 =
+- Improvement: Added compatibility to WordPress 6.1
 
 = 1.2.3 =
 - Fix: PHP notice with v8 in some cases
