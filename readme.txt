@@ -76,6 +76,9 @@ Visit our website to know more about the top WordPress products and services we 
 
 == Changelog ==
 
+= 1.2.5 =
+- Improvement: Improved codebase for improved security.
+
 = 1.2.4 =
 - Improvement: Added compatibility to WordPress 6.1
 
