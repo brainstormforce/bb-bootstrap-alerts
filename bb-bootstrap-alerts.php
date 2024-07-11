@@ -5,7 +5,7 @@
  * Description: This is the plugin to create predefined alert messages.
  * Version: 1.2.5
  * Author: Pratik Chaskar
- * Author URI: https://pratikchaskar.com
+ * Author URI: https://pratikchaskar.com/
  * Text Domain: bb-bootstrap-alerts
  */
 define( 'BB_BALERTS_DIR', plugin_dir_path( __FILE__ ) );
