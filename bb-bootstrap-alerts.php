@@ -4,8 +4,8 @@
  * Plugin URI: http://www.brainstormforce.com
  * Description: This is the plugin to create predefined alert messages.
  * Version: 1.2.5
- * Author: Brainstorm Force, Pratik Chaskar
- * Author URI: https://brainstormforce.com/
+ * Author: Pratik Chaskar
+ * Author URI: https://pratikchaskar.com
  * Text Domain: bb-bootstrap-alerts
  */
 define( 'BB_BALERTS_DIR', plugin_dir_path( __FILE__ ) );
