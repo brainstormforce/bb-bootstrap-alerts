@@ -16,7 +16,7 @@
 			<!-- Alert class -->
 			<div class="alert <?php echo esc_attr( $settings->bbn_dropdown_field ); ?> fade in" >
 				<!-- Close Button -->
-				<?php if( esc_attr( $settings->bbn_closable == 'yes' ) ): ?>
+				<?php if( ( esc_attr( $settings->bbn_closable ) == 'yes' ) ): ?>
 					<span class="close" data-dismiss="alert" aria-label="close"><i class="fa fa-times" aria-hidden="true"></i></span>
 				<?php endif; ?>
 
@@ -25,7 +25,7 @@
 	    			<div class="alert-padding">
 
 	    			<!-- Before text icon -->
-	    			<?php if( esc_attr( $settings->bbn_icon_align == 'before' ) ): ?>
+	    			<?php if( ( esc_attr( $settings->bbn_icon_align ) == 'before' ) ): ?>
 						<i class="<?php echo esc_attr( $settings->bbn_icon_field ); ?>"></i>
 					<?php endif; ?>
 
@@ -33,7 +33,7 @@
 	    			<?php echo $settings->bbn_textarea_field; ?>
 
 	    			<!-- After text icon -->
-	    			<?php if( esc_attr( $settings->bbn_icon_align == 'after' ) ): ?>
+	    			<?php if( ( esc_attr( $settings->bbn_icon_align ) == 'after' ) ): ?>
 	    				<i class="<?php echo esc_attr( $settings->bbn_icon_field ); ?>"></i>
 					<?php endif; ?>
 
