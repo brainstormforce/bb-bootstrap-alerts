@@ -2,7 +2,7 @@
 Contributors: pratikchaskar
 Donate link: https://www.paypal.me/BrainstormForce
 Requires at least: 4.4
-Tags: beaver builder, page builder plugin, alerts, notification, bootstrap, drag and drop alerts, bb bootstrap, bb alerts, bb notification
+Tags: beaver builder, page builder plugin, drag and drop alerts, bb bootstrap alerts, bb notification
 Stable tag: 1.2.5
 Tested up to: 6.6
 License: GPLv2 or later
