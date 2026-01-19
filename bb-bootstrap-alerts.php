@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Alerts for Beaver Builder
- * Plugin URI: http://www.brainstormforce.com
+ * Plugin URI: https://pratikchaskar.com/
  * Description: This is the plugin to create predefined alert messages.
  * Version: 1.2.5
  * Author: Pratik Chaskar
