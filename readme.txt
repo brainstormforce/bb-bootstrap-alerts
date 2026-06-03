@@ -2,7 +2,7 @@
 Contributors: pratikchaskar
 Requires at least: 4.4
 Tags: beaver builder, page builder plugin, drag and drop alerts, bb bootstrap alerts, bb notification
-Stable tag: 1.2.6
+Stable tag: 1.2.7
 Tested up to: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -66,6 +66,7 @@ using Beaver Builder.
 == Changelog ==
 = 1.2.7 =
 - Improvement: Added compatibility to WordPress 7.0
+- Fix: Custom font, background, border, and icon colors were ignored on the frontend when set with the color picker
 
 = 1.2.6 =
 Updated readme file.
