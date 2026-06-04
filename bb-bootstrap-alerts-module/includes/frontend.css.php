@@ -1,3 +1,36 @@
+<?php
+/**
+ * Format a Beaver Builder color value for CSS output.
+ *
+ * The Beaver Builder color picker stores values as bare hex (e.g. "e92525"),
+ * but also as rgb()/rgba() strings when a color is not fully opaque. Hard-coding
+ * a "#" prefix produces invalid CSS such as "#rgb(233, 37, 37)", which browsers
+ * silently discard. This helper handles all four cases.
+ *
+ * @since 1.2.7
+ *
+ * @param string $color   Raw color value from the picker.
+ * @param string $default Optional fallback color value.
+ * @return string Formatted, CSS-safe color value.
+ */
+if ( ! function_exists( 'bb_alerts_format_color' ) ) {
+	function bb_alerts_format_color( $color, $default = '' ) {
+		if ( empty( $color ) ) {
+			return $default ? bb_alerts_format_color( $default ) : '';
+		}
+		// rgb()/rgba() values are already valid CSS.
+		if ( 0 === strpos( $color, 'rgb' ) ) {
+			return $color;
+		}
+		// Hex value that already includes the "#" prefix.
+		if ( 0 === strpos( $color, '#' ) ) {
+			return $color;
+		}
+		// Bare hex without a "#" prefix.
+		return '#' . $color;
+	}
+}
+?>
 /* typography */
 .fl-node-<?php echo $id; ?> {
 <?php if( is_array( $settings->bbn_font_field ) && ( ( $settings->bbn_font_field['family'] ) != 'Default' ) ): ?>
@@ -19,9 +52,9 @@
 
 /* custom notification type field css */
 .fl-node-<?php echo $id; ?> .alert-custom {
-	color: #<?php echo $settings->bbn_font_color; ?>;
-	background-color: #<?php echo $settings->bbn_background_color; ?>;
-	border-color: #<?php echo $settings->bbn_border_color; ?>;
+	color: <?php echo bb_alerts_format_color( $settings->bbn_font_color ); ?>;
+	background-color: <?php echo bb_alerts_format_color( $settings->bbn_background_color ); ?>;
+	border-color: <?php echo bb_alerts_format_color( $settings->bbn_border_color ); ?>;
 	border-width:<?php echo ($settings->bbn_border_size != '') ? $settings->bbn_border_size : '1' ?>px;
 	border-style:<?php echo $settings->bbn_border_style; ?>;
 	border-radius:<?php echo ($settings->bbn_border_radius != '') ? $settings->bbn_border_radius : '4' ?>px;
@@ -33,7 +66,7 @@
 .fl-node-<?php echo $id; ?> .fa,
 .fl-node-<?php echo $id; ?> .ua-icon
  {
-	color: <?php echo ($settings->bbn_icon_color=='') ? 'inherit' : "#".$settings->bbn_icon_color; ?>
+	color: <?php echo ($settings->bbn_icon_color=='') ? 'inherit' : bb_alerts_format_color( $settings->bbn_icon_color ); ?>
 }
 
 /* link color css */
@@ -47,7 +80,7 @@
 			break;
 		case 'alert-success' : echo "color: #3c763d";
 			break;
-		case 'alert-custom' : echo "color: #".$settings->bbn_font_color;
+		case 'alert-custom' : echo "color: ".bb_alerts_format_color( $settings->bbn_font_color );
 			break;
 	}?>
 }
